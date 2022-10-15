@@ -9,7 +9,7 @@ gow_log "Starting RetroArch"
 mkdir -p "$HOME/retroarch/libretro/"
 cp -u /cfg/retroarch.cfg "$HOME/retroarch/retroarch.cfg"
 # Copy pre-installed cores from the retroarch ppa
-cp -u /usr/lib/x86_64-linux-gnu/libretro/* /home/retro/retroarch/libretro/
+cp -u /usr/lib/x86_64-linux-gnu/libretro/* ${HOME}/retroarch/libretro/
 
 exec /usr/bin/retroarch \
     --config "${HOME}/retroarch/retroarch.cfg"
