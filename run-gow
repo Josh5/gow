@@ -40,6 +40,9 @@ function main {
     done
 
     launch_env+=("user.env")
+    if [ ! -f "$SCRIPT_DIR/user.env" ]; then
+        cp "$SCRIPT_DIR/user.env.template" "$SCRIPT_DIR/user.env"
+    fi
 
     if [ "$debug" = "true" ]; then
         print_debug_info
