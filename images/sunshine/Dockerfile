@@ -4,7 +4,6 @@ ARG BASE_APP_IMAGE
 FROM ubuntu:22.04 AS sunshine-builder
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG BASE_APP_IMAGE
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
