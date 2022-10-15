@@ -8,7 +8,7 @@ if [ "${SKIP_NVIDIA_DRIVER_CHECK:-0}" = "1" ]; then
     exit
 fi
 
-function fail() {
+function fail {
     (
         if [ -n "${1:-}" ]; then
             echo "$1"
@@ -37,7 +37,7 @@ else
     echo "Looking for driver version $HOST_DRIVER_VERSION"
 fi
 
-function download_pkg() {
+function download_pkg {
     dl_url=$1
     dl_file=$2
 
